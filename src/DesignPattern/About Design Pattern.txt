@@ -1,0 +1,132 @@
+Types of Design Patters:
+1. Structural
+    - Adapter
+    - Bridge
+    - Composite
+    - Decorator
+    - Facade
+    - Flyweight
+    - Proxy
+
+2. Creational
+    - Singleton
+    - Builder
+    - Factory
+    - Prototype
+    - Abstract Factory
+
+3. Behavioural
+    - Chain of Responsibility
+    - Command
+    - Interpretor
+    - Iterator
+    - Mediator
+    - Memento
+    - Observer
+    - State
+    - Strategy
+    - Template Method
+    - Visitor
+
+
+==== Singleton Design Pattern ====
+- Static in nature
+- Thread Safe
+- Private Constructor
+- Private Instance of the Class
+- No Parameters to the constructor
+
+Examples of Singleton
+- Runtime.getRuntime()
+- Spring Bean
+- Logger
+
+Disadvantages
+- Overusage
+- Unit Testing Difficult
+- Slow Down
+- Confused with factory design Pattern (with arguements)
+
+==== Factory Design Pattern ====
+- Doesn't expose instantiation or the creation logic.
+- Subclass create the objects.
+- Common Abstract/Interface.
+- Framework, Client, Implementation uses the factories.
+
+Examples of Factory Design
+- Calendar
+- Numberformat
+
+Disadvantages
+- Very Complex
+- Creation in subclasses
+- Reafctoring
+
+==== Abstract Factory Design Pattern ====
+- Factory of Factories/ relateed objects/ collections of factories
+- Common Abstract/ Interface
+- Subclasses create the objects
+
+Examples of Abstract Factory
+- DocumentBuilderFactory in Java API
+
+Disadvantages
+- Code Complexity
+- Refactoring the factory pattern
+- More control to client
+
+==== Builder Design Pattern ====
+- String Builder
+- Document Builder
+- Locale Builder
+- Spring Reactive
+- Mock MVC Builder
+
+- It solves the multiple constructor problem (teslescope constructors)
+- Static inner class (builder class)
+- Internally required constructor
+- Removes the need for setters
+
+Disadvantages
+- Immutable
+- Inner static class
+- Designed first and Complex
+
+==== Adapter Design Pattern ====
+- Bridge between 2 interfaces (Useful when we work with Legacy code)
+
+Disadvantages
+- No new functionalities
+- Multiple Adapters
+
+
+==== Composite Design Pattern ====
+- Tree structure
+- Component
+- Leaf
+- Composite
+
+Disadvantages
+- Very costly to create more composite impl
+- Overly simple
+
+==== Decorator Design Pattern ====
+- Wrapper
+- Add functionality or behavior
+- Single Responsibility Principle
+- Dynamically compose behavior
+- Inheritance and Composition
+
+Disadvantages
+- New Class for every feature
+- no of objects (more)
+- more comples for the clients
+
+==== Facade Design Pattern ====
+- Make API easy
+- Interface not required
+- usually a refactoring pattern
+
+Disadvantages
+- Over usage
+- Clean up design pattern

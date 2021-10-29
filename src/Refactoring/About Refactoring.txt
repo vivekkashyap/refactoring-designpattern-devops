@@ -1,0 +1,44 @@
+What is Refactoring?
+- Refactoring makes code understandable and easy to extend.
+- Refactoring makes it quicker to create complicated systems.
+
+Why should we Refactor?
+- Remove excess code to make it easier to understand.
+- Better understandable code.
+- write code quicker.
+
+What is Bad Smells?
+- Common design problems.
+- Normally unclear, complicated, duplicated.
+
+Examples of Bad Smells-
+- Duplicated Code
+- Long Methods
+- Complex Conditional Statements
+- Primitive Obsession
+- Incident Exposure
+- Solution Sprawl
+- Alternative Classes with different Interfaces
+- Lazy Classes
+- Large Classes
+- Switch Statements
+- Combinational Explosions
+- Oldball Solutions
+
+How Will I Teach Refactoring
+- Cover a common problem
+- Cover its solution
+- Explain design patterns used if needed
+- Provide the solution in code form
+- Provide a checklist that can be used to quickly jump to refactoring solutions
+
+Creation Problems
+- Creation Method
+- Replace Constructors with Creation Methods
+    - Which Constructors should be called?
+    - Which Constructors had descriptive names?
+    - Constructors can't have the same attribute signatures.
+
+Avoid Duplication & Chain Constructors
+- More constructors, more problems
+- General purpose constructors save the day
