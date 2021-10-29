@@ -1,0 +1,188 @@
+Modules in DevOps
+
+1. DevOps Overview
+2. Version Control Using Git & GitHub
+3. Continous Integration using Jenkins
+4. Containerization using Docker
+5. About Kubernetes
+6. Ansible
+7. Puppet
+8. Continous Monitoring using Nagios
+
+
+******* DevOps *******
+- DevOps is a set of practices that combines software development and IT operations. It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+
+Various Stages in DevOps ---
+1. Version Control
+2. Continous Integration
+3. Continous Delivery
+4. Continous Deployment
+
+Source Coude Management Tool ---
+1. Centralized Version Control System
+- Uses central server to store repository and every developer share common repository.
+
+2. Distributed Version Control System
+- Every contributor has a local copy of the central repository and pull/push whenever they wanted to change the remote repository.
+Example: Git
+
+
+******* Git *******
+
+Some Frequently Used Git Commands ---
+
+1. git fetch -a
+- To fetch all branches from remote repository
+
+2. git branch
+- To show all the local branches of git
+
+3. git checkout <branch-name>
+- To switch to locally existing branch
+
+4. git checkout -b <branch-name>
+- To switch to existing/non-existing local branch which is existing in remote.
+
+5. git add <file-path>
+- To Add files which are modified for commiting
+
+6. git status
+- To check current status of the local repository
+
+7. git commit -m "Commit-message"
+- Adding commit with the message to the added files.
+
+8. git push 
+   git push -f
+- To Push the committed changes to the remote repository.
+
+9. git branch -d <branch-name>
+- To delete the specified local branch.
+
+10. git push origin --delete <branch-name>
+- To delete the specified branch from the remote repository.
+
+11. git reset --hard HEAD~n
+- To delete n number of commits from the local repository
+After that if you do "git push origin -f", it will push the delete commit changes to remote repository.
+
+
+12. git rebase -i origin/<branch-name>~n
+- To squash/fix the n number of commits or reduce the unnnecessary commits.
+After that if you do "git push origin -f", it will push the squashed commit changes to remote repository.
+
+
+******* Continous Integration/Continous Delivery *******
+
+Continous Integration
+- Continuous Integration is a development methodology that involves frequent integration of code into a shared repository
+
+Benefits of Continous Integration
+- Early Bug Detection
+- Reduces Bug Count
+- Automate the Process
+- The Process Becomes Transparent
+- Cost-Effective Process
+
+Continous Delivery
+- Continuous delivery is the process of getting all kinds of changes to production. Changes may include configuration changes, new features, error fixes etc. They are delivered to the user in a safe, quick and sustainable manner.
+
+Benefits of Continous Delivery
+- Reducing the Risk
+- High-Quality Application
+- Reduced Cost
+- Happier Team and Better Product
+
+Jenkins is the best open source example of CI/CD
+
+******* Puppet *******
+
+Configuration Management Tool 
+- Puppet is a Configuration Management Tool used for Deploying, Configuring and Managing Servers.
+- Used for checking distinct configuration and continuously check for configuration.
+- Follows Master/Slave architecture.
+
+Component
+- Puppet Master
+- Pupper Slave
+
+Working
+- Pupper Slave will send the FACTS to the Puppet Master.
+- Puppet Master uses the facts to prepare the CATALOG (document).
+- Then Puppet Slave send the REPORT back the Puppet master indicating that the configuration is complete.
+
+
+***** Containerization *****
+
+- It is light weight alternatives to virtual Machines.
+- It uses host OS to run the Application.
+
+Examples Docker
+
+Some Frequently used Docker Commands --
+
+1. docker –version
+- To get the currently installed version of docker
+
+2. docker pull
+- To pull images from the docker repository(by default hub.docker.com)
+
+3. docker run
+- To create a container from an image
+
+4. docker ps
+- To list the running containers
+
+5. docker ps -a
+- To show all the running and exited containers
+
+6. docker exec
+- To access the running container
+
+7. docker stop
+- To stops a running container
+
+8. docker kill
+- To kills the container by stopping its execution immediately
+
+Difference between ‘docker kill’ and ‘docker stop’ is that ‘docker stop’ gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it.
+
+9. docker commit
+- To creates a new image of an edited container on the local system
+
+10. docker login
+- To login to the docker hub repository
+
+11. docker push
+- To push an image to the docker hub repository
+
+12. docker images
+- To lists all the locally stored docker images
+
+13. docker rm
+- To delete a stopped container
+
+14. docker rmi
+- To delete an image from local storage
+
+15. docker build
+- To build an image from a specified docker file
+
+
+***** Continous Monitoring *****
+
+- Continous Monitoring is all about the ability of an organization to detect, report, respond, contain, and mitigate the attacks that occur, in its infrastructure.
+
+Tools Example: Nagios
+
+Nagios
+- Nagios is an open source software for continuous monitoring of systems, networks, and infrastructures. It runs plugins stored on a server which is connected with a host or another server on your network or the Internet. In case of any failure, Nagios alerts about the issues so that the technical team can perform recovery process immediately.
+
+Nagios Architecture
+Nagios is a client-server architecture. Usually, on a network, a Nagios server is running on a host, and plugins are running on all the remote hosts which should be monitored.
+
+
+
+
+
